@@ -15,9 +15,13 @@ Landing page conceitual para uma psicóloga clínica (TCC para ansiedade), feita
 
 ```
 index.html        página principal
-privacidade.html  política de privacidade provisória
+404.html          página de erro 404 personalizada
+privacidade.html  política de privacidade (LGPD)
+termos.html       termos de uso
 style.css         estilos e tokens (cores, tipografia, botões, linha)
 script.js         rolagem suave, linha de estações, menu, FAQ
+consent.js        aviso de cookies e voltar ao início
+favicon.*         ícones do site (SVG, ICO e apple-touch)
 img/              fotos em WebP
 ```
 

@@ -9,10 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preload" as="image" href="img/hero-camila.webp" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__lineReady)document.documentElement.classList.remove("js");},3000);</script>
   <script src="script.js" defer></script>
+  <script src="consent.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -249,7 +253,17 @@
         <p>Em crise? Ligue para o CVV no <a href="tel:188">188</a> (24h, gratuito).</p>
         <p class="footer__hint">Dica: Alt + 1 a 5 levam a cada estação.</p>
         <p>Projeto conceitual: nome, CRP, contatos e tempo de experiência são fictícios.</p>
-        <a href="privacidade.html">Política de privacidade</a>
+        <p class="footer__links">
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+          <button type="button" class="linklike" data-consent-open>Preferências de cookies</button>
+        </p>
+      </div>
+      <div class="footer__end">
+        <a class="btn btn--light to-top" href="#inicio" data-top>
+          <span class="btn__label">Voltar ao início</span>
+          <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span>
+        </a>
       </div>
     </div>
   </footer>
