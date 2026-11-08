@@ -497,6 +497,10 @@ html:not(.js) .hero__ring circle { stroke-dashoffset: 0; }
   .stop__node--end { width: 36px; height: 36px; margin-left: -18px; margin-top: -4px; }
 
   .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 32px; }
+  .hero__text { display: flex; flex-direction: column; }
+  .hero__actions { order: 2; margin-top: 26px; }
+  .hero__lead { order: 3; margin-top: 28px; }
+  .hero__sign { order: 4; }
   .hero__visual { order: -1; width: min(62vw, 300px); justify-self: center; }
   .chip--a { left: -2%; bottom: 8%; }
   .chip--b { right: -2%; top: 6%; }
@@ -517,10 +521,10 @@ html:not(.js) .hero__ring circle { stroke-dashoffset: 0; }
 
   .dock { display: block; position: fixed; z-index: 40; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); opacity: 0; transform: translateY(24px) scale(0.8); pointer-events: none; transition: transform 0.55s var(--ease), opacity 0.35s; }
   .dock.is-visible { opacity: 1; transform: none; pointer-events: auto; }
-  .dock__btn { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: var(--clay-600); color: #fff; box-shadow: 0 10px 18px -8px rgb(79 47 27 / 0.7), 0 2px 4px rgb(79 47 27 / 0.25); -webkit-tap-highlight-color: transparent; transition: background-color 0.12s, color 0.12s, transform 0.2s var(--ease); }
+  .dock__btn { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 10px 18px -8px rgb(18 140 74 / 0.75), 0 2px 4px rgb(18 140 74 / 0.3); -webkit-tap-highlight-color: transparent; transition: background-color 0.12s, color 0.12s, transform 0.2s var(--ease); }
   .dock__btn svg { width: 30px; height: 30px; }
-  .dock__btn::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--clay-600); opacity: 0; animation: dock-ring 3s ease-out infinite; pointer-events: none; }
-  .dock__btn:active { background: #fff; color: var(--clay-600); transform: scale(0.94); }
+  .dock__btn::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid #25d366; opacity: 0; animation: dock-ring 3s ease-out infinite; pointer-events: none; }
+  .dock__btn:active { background: #fff; color: #25d366; transform: scale(0.94); }
 }
 
 @media (max-width: 520px) {
